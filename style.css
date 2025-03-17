@@ -1,14 +1,32 @@
+.banner-container {
+    position: relative; /* Ensures child elements are positioned within */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
 .banner-text {
+    margin: 2px solid black;
     position: absolute;
     top: 50%;
-    /* Adjust as needed */
     left: 50%;
-    font-family: "Gwendolyn", cursive;
-    font-weight: 400;
-    font-style: normal;
     transform: translate(-50%, -50%);
+    font-family: "Lato", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+    font-size: 3vw; /* Responsive text size */
+    
     text-align: center;
-    color: white;
-    /* Ensure visibility */
-
+    
+    background-color: #ede0c0;
+    background-size: 1px;
+    
 }
