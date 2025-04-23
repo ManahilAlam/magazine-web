@@ -1,3 +1,7 @@
+body{
+    margin: 1px;
+    padding: 1px;
+}
 .banner-container {
     position: relative; /* Ensures child elements are positioned within */
     width: 100%;
@@ -15,6 +19,7 @@
 
 .banner-text {
     margin: 2px solid black;
+    border:1px solid black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,10 +28,53 @@
     font-weight: 650;
     font-style: normal;
     font-size: 3vw; /* Responsive text size */
-    
+    padding: 8px;
     text-align: center;
     
     background-color: #ede0c0;
-    background-size: 1px;
+    background-size: px;
     
 }
+
+/* Skincare CSS*/
+ 
+.mainheadings {
+    font-family: "Playfair Display";
+    text-align: center;
+    line-height: 52px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 52px;
+}
+.spacer
+{
+    padding:20px;
+}
+.caption-spacer{
+    padding:10px;
+}
+.skin1 
+{
+    border: 1px;
+    margin: 8px;
+}
+.x1
+{
+    padding:6px;  
+}
+.post-header
+{
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: none;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 22px;
+    font-display: swap;
+}
+
