@@ -1,11 +1,13 @@
-body{
+body {
     margin: 1px;
     padding: 1px;
 }
+
 .banner-container {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Ensures no text spills outside */
+    overflow: hidden;
+    /* Ensures no text spills outside */
 }
 
 .banner-container img {
@@ -37,7 +39,8 @@ body{
     color: black;
     background-color: #f5ebe0;
     padding: 10px 20px;
-    font-size: 5vw; /* Responsive size */
+    font-size: 5vw;
+    /* Responsive size */
     z-index: 2;
     max-width: 90%;
     box-sizing: border-box;
@@ -45,12 +48,79 @@ body{
     word-wrap: break-word;
 }
 
+/*ARTICLE CSS*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black overlay with 40% opacity */
+    z-index: 1;
+    /* Overlay appears above the image but below text */
+}
+
+.article-para  /*article paragraphs*/
+{
+
+    font-family: "Lora", serif;
+    font-weight: 400;
+    
+    font-size: 27px;
+    line-height: 1.0;
+    
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.h2-para{ /*sub-headings of article*/
+    
+
+    font-family: "Lora", serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+  
+}
+
+.article-page /* body of article pages*/
+{
+    margin:80px;
+}
+
+.article-banner-text  /*text on banners of each "article" page*/
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playfair Display", serif;
+    font-weight: 650;
+    text-align: center;
+    color: white;
+
+    padding: 10px 20px;
+    font-size: 2vw;
+    /* Responsive size */
+    z-index: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
 .banner-text p {
-    font-size: 2vw; /* Responsive subtitle */
+    font-size: 2vw;
+    /* Responsive subtitle */
     margin: 5px 0 0 0;
 }
 
-/* Skincare CSS */ 
+/* Skincare CSS */
 
 .mainheadings {
     font-family: "Playfair Display";
@@ -61,7 +131,8 @@ body{
     font-style: normal;
     color: #000000;
     font-size: 52px;
-} 
+}
+
 .skin1 {
     width: 350px;
     margin: 20px auto;
@@ -95,20 +166,30 @@ body{
     color: #333;
     transition: color 0.3s ease;
 
-    
-   
+
+
 }
 
 .skin1:hover .post-header {
-    color: #d4a373; 
+    color: #d4a373;
 }
 
-.spacer
-{
-    padding:20px;
+.spacer {
+    padding: 20px;
 }
 
-.x1
+.x1 {
+    padding: 6px;
+} 
+
+/*skin article 2 */
+a {
+    text-decoration: none;
+    color: #333;
+    font-style: italic; 
+}
+
+.link-texts:hover
 {
-    padding:6px;  
+    color: green;
 }
