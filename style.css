@@ -1,6 +1,6 @@
-body {
-    margin: 1px;
-    padding: 1px;
+.body {
+    margin: 0px;
+    padding: 0px;
 }
 
 .banner-container {
@@ -68,7 +68,7 @@ body {
     font-weight: 400;
     
     font-size: 40px;
-    line-height: 1.0;
+    line-height: 1.2;
     
 }
 .responsive-img {
