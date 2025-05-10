@@ -1,0 +1,42 @@
+h1 {
+    font-family: "Lora", serif;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.shop-h1 {
+    font-family: "Lora", serif;
+    text-align: center; 
+    font-size: 55px; 
+}
+
+.shop-p {
+    font-family: "Lora", serif;
+    font-style: italic;
+    text-align: center; 
+    font-size: 40px; 
+}
+
+.c-item {
+  height:1100px;
+}
+
+.c-img {
+   
+    width: 100%;
+    object-fit: cover;
+}
+
+.c-button {
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    font-size: 50px;
+    padding: 14px 40px;
+}

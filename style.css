@@ -4,6 +4,55 @@
     background-color: #fff9e6;
 }
 
+/* nav bar*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #fff9e6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#nav {
+    width: 100%; /*added */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav li {
+
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav li a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+}
+
+#nav li a:hover, #nav li a.active {
+    color: #d4a373;
+   
+}
+
+#nav li a.active::after,#nav li a:hover::after {
+    content:"";
+    width:30%;
+    height:2px;
+    background: #d4a373;
+    position: absolute;
+    bottom:-4px;
+    left: 20px;
+}
+
+/*Nav*/
 .banner-container {
     position: relative;
     width: 100%;
@@ -62,16 +111,19 @@
     /* Overlay appears above the image but below text */
 }
 
-.article-para  /*article paragraphs*/
-{
+.article-para
+
+/*article paragraphs*/
+    {
 
     font-family: "Lora", serif;
     font-weight: 400;
-    
+
     font-size: 40px;
     line-height: 1.2;
-    
+
 }
+
 .responsive-img {
     max-width: 100%;
     height: auto;
@@ -79,23 +131,28 @@
     margin: auto;
 }
 
-.h2-para{ /*sub-headings of article*/
-    
+.h2-para {
+    /*sub-headings of article*/
+
 
     font-family: "Lora", serif;
     font-size: 50px;
     font-weight: 800;
     font-style: normal;
-  
+
 }
 
-.article-page /* body of article pages*/
-{
-    margin:100px;
+.article-page
+
+/* body of article pages*/
+    {
+    margin: 100px;
 }
 
-.article-banner-text  /*text on banners of each "article" page*/
-{
+.article-banner-text
+
+/*text on banners of each "article" page*/
+    {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,7 +180,8 @@
 
 /* Skincare CSS */
 
-.mainheadings { /*top of each article page heading eg: Skin*/
+.mainheadings {
+    /*top of each article page heading eg: Skin*/
     font-family: "Playfair Display";
     text-align: center;
     line-height: 52px;
@@ -181,16 +239,16 @@
 
 .x1 {
     padding: 6px;
-} 
+}
 
 /*skin article 2 */
 a {
     text-decoration: none;
     color: #333;
-    font-style: italic; 
+    font-style: italic;
 }
 
-.link-texts:hover
-{
+.link-texts:hover {
     color: green;
 }
+
