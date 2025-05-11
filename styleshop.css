@@ -1,100 +1,182 @@
 /* Carousel Wrapper Box */
 .carousel-box {
-    max-width: 1000px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative; /* Important for overlay */
-    padding: 5px;
-  }
-  
-  /* Responsive Image and Item Height */
-  .c-item {
-    width: 1200px;
-    height: auto;
-    position: relative;
-  }
-  
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  /* Important for overlay */
+  padding: 5px;
+}
+
+/* Responsive Image and Item Height */
+.c-item {
+  width: 1200px;
+  height: auto;
+  position: relative;
+}
+
+.c-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Button Overlay Center Bottom */
+.carousel-overlay {
+
+  border: 1px solid black;
+  /* Strong black border */
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fefae0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+.c-button:hover {
+
+  background-color: rgb(236, 218, 192);
+  color: white;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .c-img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+    height: 400px;
   }
-  
-  /* Button Overlay Center Bottom */
-  .carousel-overlay {
-    
-    border: 1px solid black; /* Strong black border */
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #fefae0;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    display: flex;
-    gap: 20px;
-    transform: translateX(-50%);
-    z-index: 10;
-    text-align: center;
-  }
-  
-  /* Shop Now Button Styling */
+
   .c-button {
-    
-    border: 2px solid black; /* Strong black border */
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    color: black;
+    font-size: 18px;
+    padding: 8px 24px;
+  }
+
+  .shop-h1 {
+    font-size: 36px;
+  }
+
+  .shop-p {
     font-size: 24px;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    border-radius: 5px;
   }
-  
-  .c-button:hover {
-    
-    background-color: black;
-    color: white;
-    
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .c-img {
-      height: 400px;
-    }
-  
-    .c-button {
-      font-size: 18px;
-      padding: 8px 24px;
-    }
-  
-    .shop-h1 {
-      font-size: 36px;
-    }
-  
-    .shop-p {
-      font-size: 24px;
-    }
-  }
-  
+}
+
 h1 {
-    font-family: "Lora", serif;
-    font-size: 50px;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Lora", serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
 .shop-h1 {
-    font-family: "Lora", serif;
-    text-align: center; 
-    font-size: 55px; 
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 55px;
 }
 
 .shop-p {
-    font-family: "Lora", serif;
-    font-style: italic;
-    text-align: center; 
-    font-size: 40px; 
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 40px;
 }
+
+/*PRODUCTS*/
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro {
+  /*PRODUCt image animate ig?*/
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 0.1px solid #a68a64;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  margin: 15px 0;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+#product1 .pro img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro :hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#product1 .pro .des {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: rgb(235, 143, 69);
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: black;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+  color: #F2E34C
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178
+}
+
+#product1 .pro .cart {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background: #fefae0;
+  color: #088178;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/*
+*/
