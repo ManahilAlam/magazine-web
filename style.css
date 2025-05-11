@@ -5,54 +5,72 @@
 }
 
 /* nav bar*/
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
+/* General Navbar Styling */
+.navbar {
     background-color: #fff9e6;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 15px 40px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-#nav {
-    width: 100%; /*added */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar-brand img {
+    max-height: 60px;
 }
 
-#nav li {
-
-    list-style: none;
-    padding: 0 20px;
+/* Nav Links */
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+    margin: 0 12px;
+    font-weight: 500;
     position: relative;
+    transition: color 0.3s ease;
 }
 
-#nav li a {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    text-decoration: none;
-    transition: 0.3s ease;
-
-}
-
-#nav li a:hover, #nav li a.active {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
     color: #d4a373;
-   
 }
 
-#nav li a.active::after,#nav li a:hover::after {
-    content:"";
-    width:30%;
-    height:2px;
-    background: #d4a373;
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    content: "";
     position: absolute;
-    bottom:-4px;
-    left: 20px;
+    bottom: -4px;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background-color: #d4a373;
+    transition: width 0.3s ease;
 }
 
-/*Nav*/
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: #fff9e6;
+    border: none;
+}
+
+.dropdown-item {
+    font-size: 15px;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f0e2ca;
+    color: #d4a373;
+}
+
+/* Toggler Icon for Mobile */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*NAV  END*/
 .banner-container {
     position: relative;
     width: 100%;
