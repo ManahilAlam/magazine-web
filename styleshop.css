@@ -178,5 +178,241 @@ h1 {
   right: 10px;
 }
 
-/*
+#newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #faedcd;
+}
+
+#newsletter h4 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+#newsletter p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+
+
+}
+
+#newsletter button {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  white-space: nowrap;
+
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border: 1px solid black;
+  background-color: transparent;
+
+
+}
+
+#footer-section {
+ background-color: #faedcd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#footer-section .col .p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-section .col .insta {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+ 
+  border: 1px solid grey;
+  text-align: center;
+  bottom: 20px;
+  right: 10px;
+}
+
+#footer-section .col .face {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  
+  border: 1px solid grey;
+  text-align: center;
+  bottom: 20px;
+  right: 10px;
+}
+
+#footer-section .col .tube{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+ 
+  border: 1px solid grey;
+  text-align: center;
+  bottom: 20px;
+  right: 10px;
+}
+
+#footer-section .col .elon{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  
+  border: 1px solid grey;
+  text-align: center;
+  bottom: 20px;
+  right: 10px;
+}
+
+#footer-section .col .tok{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  
+  border: 1px solid grey;
+  text-align: center;
+  bottom: 20px;
+  right: 10px;
+}
+.socials {
+  display: flex;
+  justify-content: center;       /* Center on small screens */
+  gap: 15px;                     /* Space between icons */
+  font-size: 1.5rem;             /* Size of icons */
+  color: #333;                   /* Default color */
+  margin-top: 10px;
+}
+
+
+
+
+
+/* SHOP ZARASHAHJAHNA
 */
+#pagination{
+  text-align: center;
+}
+#pagination a{
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color:#a68a64;
+  border-radius: 5px;
+  color: black;
+  font-weight: 600;
+}
+/*single product*/
+
+#prodetails .single-pro-img
+{
+width:40%;
+margin-right: 50px;
+
+}
+.sm-img-grp{
+  display: flex;
+  
+ 
+
+}
+
+.sm-img-col{
+  flex-basis: 24%;
+cursor:pointer;
+}
+
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+}
+#prodetails .single-pro-details{
+  width:50%;
+  
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0px 20px 0;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+#prodetails .single-pro-details h2{
+  font-size: 18px;
+  font-family: "Merriweather";
+}
+#prodetails .single-pro-details h5{
+  padding: 20px 0px 00px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+#prodetails .single-pro-details span{
+  line-height: 25px;
+  font-family: "Lora", serif;
+}
+ /*#prodetails .single-pro-details select{
+ display:block;
+ paddin: 5px 10px;
+ margin-bottom: 10px;
+ }*/
+
+ #prodetails .single-pro-details input{
+  width:50px;
+  height:47px;
+  padding-left:10px;
+  font-size:16px;
+  margin-right:10px;
+
+ }
+
+ #prodetails .single-pro-details button{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  white-space: nowrap;
+
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border: 1px solid black;
+  background-color: transparent;
+ }
+ #prodetails .single-pro-details button:hover{
+  background-color:black;
+  color: white;
+ }
+ #prodetails .single-pro-details input:focus{
+  outline: none;
+ }
