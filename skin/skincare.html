@@ -3,16 +3,98 @@
 
 <head>
     <link rel="stylesheet" href="../style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skincare page</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="../styleshop.css" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
-<body style="background-color: #fff9e6; margin:0px;" >
- 
+<body style="background-color: #fff9e6; margin:0px;">
+    <!-- Navbar -->
+    <!-- Bootstrap Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav ">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo2.png" alt="Logo" style="max-height: 60px;">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+
+                <!-- Shop Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                      <li><a class="dropdown-item" href="../shop/shophome.html">Shops</a></li>
+                      <li><a class="dropdown-item" href="../shop/zarashahjahan.html">Zara Shahjahan</a></li>
+                      <li><a class="dropdown-item" href="../shop/kaarigarghar.html">Kaarigar Ghar</a></li>
+                      <li><a class="dropdown-item" href="../shop/suidhaga.html">Sui Dhaga</a></li>
+                    </ul>
+                  </li>
+                  
+
+                <!-- Beauty Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="beautyDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" class="nav-link active">
+                        Beauty
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="beautyDropdown">
+                        <li><a class="dropdown-item" href="../skin/skincare.html">Skin</a></li>
+                        <li><a class="dropdown-item" href="../makeup/makeup.html">Makeup</a></li>
+                    </ul>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+                <!-- Contact -->
+                <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+
+                <!-- Fashion Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="fashionDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Fashion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
+                        <li><a class="dropdown-item" href="../fashion/shopthelook.html">Shop the Look</a></li>
+                        <li><a class="dropdown-item" href="../fashion/fashiontrends.html">Fashion Trends</a></li>
+                    </ul>
+                </li>
+
+                <!-- Culture Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cultureDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Culture
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                        <li><a class="dropdown-item" href="../culture/book.html">Book Recommendations</a></li>
+                        <li><a class="dropdown-item" href="../culture/shows.html">TV Shows</a></li>
+                    </ul>
+                </li>
+
+                <!-- Quizzes -->
+                <li class="nav-item"><a class="nav-link" href="../quizes/quiz.html">Quizzes</a></li>
+
+                <!-- Cart Icon -->
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+
+    </nav>
     ​ <!-- SKINCARE HTML -->
     <div class="container">
         <div class="row">
@@ -28,18 +110,19 @@
                 <div class="skin1">
                     <a href="skinarticle1.html">
                         <img src="../images/skin1.jpg" alt="turmeric facemask image" width="350px" height="400px"
-                        class="img-fluid">
-                    </a>                    
+                            class="img-fluid">
+                    </a>
                     <div class="caption-spacer"> </div>
                     <h2 class="post-header"> <b>5 Natural Desi Face Packs That Actually Work!</b> </h2>
                 </div>
-            </div>                  
+            </div>
             <div class="col-12 col-sm-4 col-md-4">
                 <div class="skin1">
                     <a href="skinarticle2.html">
-                        <img src="../images/skin2.jpg" alt="skincare products " width="350px" height="450px" class="img-fluid">
+                        <img src="../images/skin2.jpg" alt="skincare products " width="350px" height="450px"
+                            class="img-fluid">
                     </a>
-                    
+
                     <div class="caption-spacer"> </div>
                     <h2 class="post-header"> <b>Skincare Routine for Oily Skin (Student Budget Edition)</b> </h2>
                 </div>
@@ -47,13 +130,13 @@
             <div class="col-12 col-sm-4 col-md-4">
                 <div class="skin1">
                     <a href="skinarticle3.html">
-                    <img src="../images/skin6.jpg" alt="beauty buys" width="350px" height="400px" class="img-fluid">
+                        <img src="../images/skin6.jpg" alt="beauty buys" width="350px" height="400px" class="img-fluid">
                     </a>
                     <div class="x1"> </div>
                     <h2 class="post-header"> <b>8 Mood-Boosting Beauty Buys</b> </h2>
                 </div>
-            </div>  
-           
+            </div>
+
         </div>
 
         <div class="container">
@@ -62,9 +145,9 @@
                     <div class="skin1">
                         <a href="skinarticle4.html">
                             <img src="../images/skin4.jpg" alt="tomato facemask" width="350px" height="400px"
-                            class="img-fluid">
+                                class="img-fluid">
                         </a>
-                        
+
                         <div class="caption-spacer"> </div>
                         <h2 class="post-header"> <b>"Does Tomato Juice Really Work for Skin Brightening?" — I Tried It
                                 So You Don’t Have To</b> </h2>
@@ -72,7 +155,8 @@
                 </div>
                 <div class="col-12 col-sm-4 col-md-4">
                     <div class="skin1">
-                        <img src="../images/skin7.jpg" alt="morning skincare"  width="350px" height="200px" class="img-fluid">
+                        <img src="../images/skin7.jpg" alt="morning skincare" width="350px" height="200px"
+                            class="img-fluid">
                         <div class="caption-spacer"> </div>
                         <h2 class="post-header"> <b>Cold-Plunging: Is It Really Worth The Hype? </b> </h2>
                     </div>
@@ -84,7 +168,7 @@
                         <h2 class="post-header"> <b>Ubtan 101: Benefits, How to Make It, and My Experience</b> </h2>
                     </div>
                 </div>
-               
+
             </div>
         </div>
         <div class="container">
@@ -98,16 +182,17 @@
                 </div>
                 <div class="col-12 col-sm-4 col-md-4">
                     <div class="skin1">
-                        <img src="../images/skin8.jpg" alt="women" width="350px" height="400px"
-                            class="img-fluid">
+                        <img src="../images/skin8.jpg" alt="women" width="350px" height="400px" class="img-fluid">
                         <div class="caption-spacer"> </div>
-                        <h2 class="post-header"> <b>Desi Girls and the Pressure to Glow Up — Let’s Talk Real Skin</b> </h2>
+                        <h2 class="post-header"> <b>Desi Girls and the Pressure to Glow Up — Let’s Talk Real Skin</b>
+                        </h2>
                     </div>
                 </div>
-              
+
                 <div class="col-12 col-sm-4 col-md-4">
                     <div class="skin1">
-                        <img src="../images/skin10.jpg" alt="beauty buys" width="350px" height="400px" class="img-fluid">
+                        <img src="../images/skin10.jpg" alt="beauty buys" width="350px" height="400px"
+                            class="img-fluid">
                         <div class="x1"> </div>
                         <h2 class="post-header"> <b>Multani Mitti 101: The Clay Mask Every Desi Girl Swears By</b> </h2>
                     </div>

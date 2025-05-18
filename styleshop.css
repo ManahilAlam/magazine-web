@@ -344,8 +344,6 @@ margin-right: 50px;
 }
 .sm-img-grp{
   display: flex;
-  
- 
 
 }
 
@@ -360,7 +358,6 @@ cursor:pointer;
 }
 #prodetails .single-pro-details{
   width:50%;
-  
   padding-top: 30px;
 }
 
@@ -415,4 +412,86 @@ cursor:pointer;
  }
  #prodetails .single-pro-details input:focus{
   outline: none;
+ }
+/* Contact Form*/
+#contact{
+  display: flex;
+  margin-top: 20px;
+}
+
+#contact .contact-us{
+  width:50%;
+  padding-top: 30px;
+ 
+}
+#contact .contact-us ul li{
+  font-size: 15px;
+  font-family: "Lora", serif;
+}
+#contact .contact-form{
+  width:50%;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+#contact .contact-us h1{
+  padding: 40px 0px 20px 0;
+ 
+font-size: 30px;
+font-family: "Playfair Display", serif;
+}
+
+#contact .contact-form h1{
+  padding: 40px 0px 20px 0;
+ 
+font-size: 30px;
+font-family: "Playfair Display", serif;
+}
+#contact .contact-us p{
+  line-height: 1.3;
+font-size: 18px;
+font-family: "Lora", serif;
+}
+
+#contact .contact-form .inputBox {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; /* <-- This adds space between each input box */
+}
+#contact .contact-form .inputBox input::placeholder,
+#contact .contact-form .inputBox textarea::placeholder {
+  background-color: #fff9e6;
+  color: gray;           /* Change color */
+  height: 3.125rem;
+  padding: 0 1.25em;
+  opacity: 0.8;          /* Optional: transparency */
+  font-size: 14px;       /* Optional: font size */
+}
+#contact .contact-form .inputBox input:placeholder-shown,
+#contact .contact-form .inputBox textarea:placeholder-shown {
+  border: none; /* or border-color: transparent; */
+  background-color: #fff9e6;
+}
+
+#contact .contact-form button{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-top: 1rem; 
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border: 1px solid black;
+  background-color: transparent;
+
+}
+#contact .contact-form  button:hover{
+  background-color:black;
+  color: white;
  }
